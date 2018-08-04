@@ -29,8 +29,11 @@ p,{
 }
 
 .link {
-	color: $col-secondary;
+	color: $col-primary;
 	text-decoration: none;
 	font-weight: $font-bold;
 }
 
+footer{
+	margin-top: 10em;
+}

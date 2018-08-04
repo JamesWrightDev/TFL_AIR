@@ -1,0 +1,76 @@
+//Typography
+
+.headline--primary {
+font-size: 6vw;
+font-weight: $font-bold;
+padding: 0.5em;
+line-height: 1.2;
+font-family: $font-serif;
+margin: auto;
+display: block;
+justify-content: center;
+width: auto;
+
+
+@include mq(medium){
+	font-size: 2em;
+}
+}
+
+.headline {
+	font-family: 'Slabo 13px', serif;
+	margin-top: 3em;
+	font-size: 9vw;
+	@include mq(medium){
+	font-size: 3em;;
+	}
+
+}
+
+
+.headline--secondary {
+	font-size: em(18px);
+	font-weight: $font-regular;
+	margin: 1em 0;
+	font-family: $font-serif;
+	color: $col-font;
+
+}
+
+.blockquote {
+	font-family: $font-serif;
+	font-size: em(24px);
+	font-style: italic;
+	line-height: 1.4;
+	font-weight: $font-regular;
+	border-left: solid 10px $col-primary;
+	border-radius: 5px;
+	padding-left: 20px;
+	margin: 1em 0;
+	color: $col-font;
+}
+
+//Hide deault Form Labels
+.form__label{
+
+	&--hidden{
+		display: none;
+	}
+}
+
+//Font styles for nav items
+.nav__item {
+	color: $col-font;
+	font-weight: $font-thin;
+	a{
+		color: $col-font-dark;
+		font-weight: $font-thin;
+		text-decoration: none;
+	}
+	&:hover{
+		a {
+			color: $col-white;
+		}
+	}
+
+}

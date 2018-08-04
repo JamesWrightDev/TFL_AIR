@@ -1,0 +1,24 @@
+.img--logo {
+	@include flex(column);
+	width: 150px;
+	margin: auto;
+}
+
+.img--avatar{
+	@include flex(column);
+	width: 150px;
+	margin: auto;
+	@include mq(medium){
+	}
+
+}	
+
+.img--frame{
+	@include flex(column);
+	border: solid 1px $col-font;
+	padding: 10px;
+	width: 250px;
+	margin: auto;
+}
+
+	

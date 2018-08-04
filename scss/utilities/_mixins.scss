@@ -1,0 +1,66 @@
+
+/*
+* === Mixins ===
+*/
+
+//Flexbox Mixins
+
+@mixin flex($flex-direction: column, $justify-content: space-between) {
+	display: flex;
+	justify-content: $justify-content;
+	flex-direction: $flex-direction;
+	align-items: flex-start;
+}
+
+//Media Query Mixin 
+// NOTE: (Made during the Sass Basics course)
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+   @else {
+   	@error "No value could be retrieved for `#{$break}`. "
+  }
+}
+
+
+
+//Column Width Calulator
+@mixin g-columns {
+  @for $i from 1 through $g-col-count {
+    $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;  
+    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+    
+    // Generate column modifier classes
+    &--#{$i} {
+      width: percentage($target / $context);
+
+    }
+  }
+}  
+
+
+
+
+@mixin btn($padding: 0px 0px){
+  border: none;
+  padding: $padding;
+  border-radius: 10%;
+  overflow:hidden;
+  width: 50%;
+ 
+  
+}

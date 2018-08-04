@@ -1,0 +1,70 @@
+/*
+* === Variables ===
+*/
+
+
+//Color Var
+
+
+//Fonts Var
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px');
+
+
+$font-serif: 'Roboto', sans-serif, Helvetica, Arial, "Lucida Grande", sans-serif; 
+$font-slabo: 'Slabo 13px', serif;
+$font-size-default: 16px;
+$font-line-height: 1.8;
+
+//Font Weights
+
+$font-thin: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-black: 900;
+
+//Color
+$col-font       : #858585;
+$col-font-dark  : #282828;
+$col-white      : #fff;
+$col-primary    : #58e1c1;
+$col-secondary  : #51ddfc;
+$col-success 	: #63cc82;
+$col-error   	: #e4757a;
+$col-warn    	: #fd7856;
+$col-info    	: #927bc1;
+$col-danger: #F00;
+//Grid
+$col--12: #80e8d1;
+$col--8 : #fd9f85;
+$col--7 : #ec9fa3;
+$col--6 : #3fabca;
+$col--5 : #88d9a0;
+$col--4 : #7ee6fd;
+$col--3 : #deb2ee; 
+
+//Color Map
+$btn-color-map: (
+--default: $col-primary,	
+--success: $col-success,
+--error  : $col-error,	
+--warn   : $col-warn,
+--info   : $col-info, 
+
+	);
+
+
+//Breakpoints
+// NOTE: (Made during the Sass Basics course)
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1100px;
+
+
+//Column Vars
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;

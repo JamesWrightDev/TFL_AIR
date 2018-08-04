@@ -1,0 +1,14 @@
+.form{
+	
+	text-alight: left;
+	&__input{
+		margin: 1em 0;
+		width: 100%;
+		border-bottom: 5px solid $col-primary;
+		border-top: transparent;
+		border-right: transparent;
+		border-left: transparent;
+
+	}
+}
+
